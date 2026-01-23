@@ -16,14 +16,14 @@
             {% if site.last_name %}
               {{- site.last_name -}}
             {% endif %}
-          {% else %}
-            {{- site.title -}}
-          {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% social_links %}</div>
+      {% else %}
+        {{- site.title -}}
       {% endif %}
+    </a>
+  {% elsif site.enable_navbar_social %}
+    <!-- Social Icons -->
+    <div class="navbar-brand social">{% include social-links-custom.liquid %}</div>
+  {% endif %}
       <!-- Navbar Toggle -->
       <button
         class="navbar-toggler collapsed ml-auto"

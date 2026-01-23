@@ -1,0 +1,59 @@
+.about-section {
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.about-section .section-title {
+  font-size: 1.35rem;
+  margin: 0 0 0.35rem 0;
+  padding: 0;
+  line-height: 1.25;
+}
+
+.about-section .section-list {
+  margin: 0;
+  padding: 0;
+}
+
+.about-section dt {
+  font-weight: 600;
+  margin: 0 0 0.35rem 0;
+}
+
+.about-section dd {
+  margin-left: 0;
+  margin-bottom: 0.35rem;
+}
+
+.about-section .dates {
+  color: var(--text-muted, #6c757d);
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.education-section .edu-logo,
+.work-section .work-logo {
+  float: right;
+  width: 140px;
+  max-width: 35vw;
+  margin-left: 0.75rem;
+}
+
+.about-section .section-list > .education-item,
+.about-section .section-list > .work-item {
+  margin-top: 0.35rem;
+}
+
+.about-section .section-list > .education-item:first-of-type,
+.about-section .section-list > .work-item:first-of-type {
+  margin-top: 0;
+}
+
+@media (max-width: 576px) {
+  .education-section .edu-logo,
+  .work-section .work-logo {
+    float: none;
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+  }
+}

@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-12-29
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I received the *China National Scholarship* for the second time, recognizing top 0.2% nationwide academic performance and leadership.

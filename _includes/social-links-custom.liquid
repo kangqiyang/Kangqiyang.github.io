@@ -1,0 +1,68 @@
+{%- assign socials = site.data.socials -%}
+{%- assign tips = socials.tooltips | default: {} -%}
+<div class="contact-icons">
+  {%- if socials.email -%}
+    <a href="mailto:{{ socials.email }}" title="{{ tips.email | default: 'Email' }}">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.orcid_id -%}
+    <a
+      href="https://orcid.org/{{ socials.orcid_id }}"
+      title="{{ tips.orcid | default: 'ORCID' }}"
+      rel="external nofollow noopener"
+      target="_blank"
+    >
+      <i class="ai ai-orcid"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.github_username -%}
+    <a
+      href="https://github.com/{{ socials.github_username }}"
+      title="{{ tips.github | default: 'GitHub' }}"
+      rel="external nofollow noopener"
+      target="_blank"
+    >
+      <i class="fa-brands fa-github"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.linkedin_username -%}
+    <a
+      href="https://www.linkedin.com/in/{{ socials.linkedin_username }}"
+      title="{{ tips.linkedin | default: 'LinkedIn' }}"
+      rel="external nofollow noopener"
+      target="_blank"
+    >
+      <i class="fa-brands fa-linkedin"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.medium_username -%}
+    <a
+      href="https://medium.com/@{{ socials.medium_username }}"
+      title="{{ tips.medium | default: 'Medium' }}"
+      rel="external nofollow noopener"
+      target="_blank"
+    >
+      <i class="fa-brands fa-medium"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.x_username -%}
+    <a
+      href="https://twitter.com/{{ socials.x_username }}"
+      title="{{ tips.x | default: 'X (Twitter)' }}"
+      rel="external nofollow noopener"
+      target="_blank"
+    >
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+  {%- endif -%}
+  {%- if socials.cv_pdf -%}
+    <a
+      href="{% if socials.cv_pdf contains '://' %}{{ socials.cv_pdf }}{% else %}{{ socials.cv_pdf | relative_url }}{% endif %}"
+      title="{{ tips.cv | default: 'CV PDF' }}"
+      {% unless socials.cv_pdf contains '://' %}{% else %}rel="external nofollow noopener" target="_blank"{% endunless %}
+    >
+      <i class="ai ai-cv"></i>
+    </a>
+  {%- endif -%}
+</div>
