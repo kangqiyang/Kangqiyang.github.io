@@ -41,8 +41,8 @@ ninja.data = [{
           section: "News",},{id: "news-i-have-completed-my-b-eng-degree-at-sun-yat-sen-university",
           title: 'I have completed my B.Eng. degree at Sun Yat-sen University. 🎓',
           description: "",
-          section: "News",},{id: "news-i-will-begin-my-graduate-studies-in-cse-at-gerogia-tech-this-fall-go-jackets",
-          title: 'I will begin my graduate studies in CSE at Gerogia Tech this fall....',
+          section: "News",},{id: "news-i-will-begin-my-graduate-studies-in-cse-at-georgia-tech-this-fall-go-jackets",
+          title: 'I will begin my graduate studies in CSE at Georgia Tech this fall....',
           description: "",
           section: "News",},{
       id: 'light-theme',
